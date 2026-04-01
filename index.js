@@ -5,11 +5,11 @@ import errorHandler from './middlewares/errorHandler.js';
 import dbConnect from './utils/db.js'
 import { router as bookRoutes } from "./routes/books.js";
 
-dbConnect();
+//dbConnect();
 const port = process.env.PORT || 4000
 const app = express();
 
-app.use(bookRoutes)
+app.use('/books', bookRoutes)
 
 
 app.use(errorHandler)
