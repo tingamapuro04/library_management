@@ -6,7 +6,7 @@ import dbConnect from './utils/db.js'
 import { router as bookRoutes } from "./routes/books.js";
 import { router as studentRoutes } from "./routes/students.js"
 
-dbConnect();
+//dbConnect();
 const port = process.env.PORT || 4000
 const app = express();
 
